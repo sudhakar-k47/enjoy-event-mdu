@@ -158,10 +158,14 @@ const HeroSection = () => {
           >
             {images.map((image, index) => (
               <SwiperSlide key={index}>
-                <div className="w-full h-64 lg:h-[500px] bg-white rounded-2xl shadow-2xl overflow-hidden">
-                  <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
-                </div>
-              </SwiperSlide>
+              <div className="w-full h-64 lg:h-[500px] bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </SwiperSlide>
             ))}
           </Swiper>
         </div>
